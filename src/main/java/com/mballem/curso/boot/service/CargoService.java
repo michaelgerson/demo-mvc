@@ -1,8 +1,8 @@
 package com.mballem.curso.boot.service;
 
-import java.util.List;
-
 import com.mballem.curso.boot.domain.Cargo;
+
+import java.util.List;
 
 public interface CargoService {
 
@@ -15,4 +15,6 @@ public interface CargoService {
 	Cargo buscarPorId(Long id);
 	
 	List<Cargo> buscarTodos();
+
+	boolean cargoTemFuncionarios(Long id);
 }
