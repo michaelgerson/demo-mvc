@@ -32,6 +32,7 @@ public class CargoController {
 
     @GetMapping("/listar")
     public String listar(ModelMap model) {
+        model.addAttribute("cargos", service.buscarTodos());
         return "/cargo/lista";
     }
 
